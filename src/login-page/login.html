@@ -13,28 +13,34 @@
             <div id="background-imagem"> <!--Imagem principal da tela de login-->
 
             </div>
+            <span class="block">
+                <h1>Entrar</h1>
+            </span>
             <div id="form-login">
-                <h1>Login</h1>
                 <div class="line">
 
                 </div>
                 <form method="post">
                     <div id="email-box"> <!--Separar os inputs por divs-->
+                        <label for="iemail">Email</label>
                         <input type="email" name="email" id="iemail" class="inputs" required placeholder="Email" min="10" max="25">
                     </div>
                     <div id="password-box">
+                        <label for="ipass">Senha</label>
                         <input type="password" name="pass" id="ipass" class="inputs" required placeholder="Senha">
                     </div>
                     <div id="remember-box">
                         <input type="checkbox" name="check" id="icheck">
 
                         <label for="icheck">lembre-se de mim</label>
-                        <p>
-                            <a href="#" class="link">esqueceu a senha?</a>
-                        </p>
                     </div>
                     <div id="submit">
-                        <button type="submit" id="btn-login">Login</button>
+                        <button type="submit" id="btn-login">Entrar</button>
+                    </div>
+                    <div>
+                        <span class="link">
+                            <p> <a href="#">Cadastrar</a> || <a href="#">esqueceu a senha?</a></p>
+                    </span>
                     </div>
                 </form>
             </div>

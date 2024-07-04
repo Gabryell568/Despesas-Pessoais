@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-/* configurações gerais */
+@charset "UTF8";
 
 *{
     margin: 0px;
@@ -20,76 +18,75 @@
 body,html{
     height: 100vh;
     width: 100vw;
-}
-/* versão mobile da tela de login */
-div#container{
-    width: 350px;
-    height: 350px;
-    background-image: linear-gradient(to bottom,var(--lightGreen50),var(--darkGrenn100));
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.397);
+    background-image: linear-gradient(to bottom, var(--darkGreen50), var(--lightGreen50))
 }
 
-/* configurações do formulario */
-div#form-login > h1{
-    color: var(--Yellow);
-    font-size: 2.3em;
-    text-align: left;
-    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.432);
+div#container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 517px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+div#background-imagem{
+    background: url(../imagens/logo.png) no-repeat;
+    height: 80px;
+    background-size: contain;
+}
+div#form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span.block h1{
+    display: block;
+    margin: 15px 0px 20px 20px;
 }
 .line{
-    margin: 15px;
-    width: 90%;
-    background-color: lightgray;
-    height: 1px;
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(163, 163, 163);
+    margin-bottom: 14px;
 }
 .inputs{
-    display: block;
-    width: 90%;
     margin: 15px;
+    width: 100%;
     padding: 10px;
+    border: 1px solid var(--darkGrenn100);
     border-radius: 10px;
-    border: var(--darkGreen50);
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.521);
-}
-div#remember-box{
-    display: flex;
-    justify-content: space-between;
 }
 #btn-login{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lightYellow);
     display: block;
-    margin-top: 15%;
-    margin-left: 15%;
-    width: 70%;
-    padding: 8px;
+    margin:10px 0px 15px 0px;
     cursor: pointer;
-    border-radius: 10px;
-    border: var(--darkGreen50);
-    font-weight: bold;
+    color: white;
     font-size: 1.3em;
-    color: var(--Yellow);
-    background-color: transparent;
-    transition: 0.9s;
+    font-weight: bold;
 }
 #btn-login:hover{
-    background-color: var(--lightYellow);
-    color: white;
-    
+    background-color: var(--Yellow);
+    transition: 0.9s;
 }
-/* configurações dos links */
 .link{
+    display: flex;
+    justify-content: center;
+}
+a{
     text-decoration: none;
-    color:var(--Yellow);
-    font-size: 0.8em;
+    text-align: center;
 }
-.link:hover{
+a:hover{
     text-decoration: underline;
-}
-input#icheck{
-    
+    color: var(--Yellow);
+    transition: 0.6s;
 }
