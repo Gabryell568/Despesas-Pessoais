@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --lightGreen50:#06BF7B;
+    --darkGreen50:#038C5A;
+    --darkGrenn100:#115930;
+
+    --lightYellow: #F2B138;
+    --Yellow: #D9CC1A;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+/* versão mobile da tela de login */
+div#container{
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(to bottom,var(--lightGreen50),var(--darkGrenn100));
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.397);
+}
+
+/* configurações do formulario */
+div#form-login > h1{
+    color: var(--Yellow);
+    font-size: 2.3em;
+    text-align: left;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.432);
+}
+.line{
+    margin: 15px;
+    width: 90%;
+    background-color: lightgray;
+    height: 1px;
+}
+.inputs{
+    display: block;
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--darkGreen50);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.521);
+}
+div#remember-box{
+    display: flex;
+    justify-content: space-between;
+}
+#btn-login{
+    display: block;
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 70%;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: var(--darkGreen50);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--Yellow);
+    background-color: transparent;
+    transition: 0.9s;
+}
+#btn-login:hover{
+    background-color: var(--lightYellow);
+    color: white;
+    
+}
+/* configurações dos links */
+.link{
+    text-decoration: none;
+    color:var(--Yellow);
+    font-size: 0.8em;
+}
+.link:hover{
+    text-decoration: underline;
+}
+input#icheck{
+    
+}
