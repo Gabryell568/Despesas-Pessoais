@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --lightGreen50:#06BF7B;
+    --darkGreen50:#038C5A;
+    --darkGrenn100:#115930;
+
+    --lightYellow: #F2B138;
+    --Yellow: #D9CC1A;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(-45deg, var(--Yellow), #038C5A, var(--lightGreen50), #038C5A, var(--Yellow));
+}
+div#container{
+    background-color: #ffffff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    height: max-content;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.411);
+}
+div#register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.block{
+    display: block;
+}
+.block h1{
+    color: var(--Yellow);
+}
+#line{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(153, 153, 153);
+}
+div#name-box{
+    margin: 15px;
+}
+div#email-box{
+    margin: 15px;
+}
+div#password-box{
+    margin: 15px;
+}
+input#ipass{
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--darkGrenn100);
+}
+input#iemail{
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--darkGrenn100);
+}
+input#iname{
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--darkGrenn100);
+}
+div#sex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+}
+#btn-register{
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--darkGrenn100);
+    cursor: pointer;
+    background-color: var(--lightYellow);
+    font-size: 1em;
+    font-weight: bold;
+}
+#btn-register:hover{
+    background-color: var(--Yellow);
+    color: white;
+    transition: 0.9s;
+}

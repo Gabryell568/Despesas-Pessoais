@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilo/register.css">
+</head>
+<body>
+    <div id="container">
+        <div id="register-form">
+            <div id="imagem-cadastro">
+
+            </div>
+            <span class="block">
+                <h1>Registro</h1>
+            </span>
+            <div id="line">
+
+            </div>
+            <form action="" method="post">
+                <div id="name-box">
+                    <label for="iname">Nome</label>
+                    <input type="text" name="name" id="iname" required placeholder="Nome Completo" min="5" max="30">
+                </div>
+                <div id="email-box">
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Digite seu Email">
+                </div>
+                <div id="password-box">
+                    <label for="ipass">Senha</label>
+                    <input type="password" name="pass" id="ipass" required placeholder="sua nova Senha">
+                </div>
+                <div id="sex">
+                    <input type="radio" name="sex" id="sexM">
+                    <label for="sexM">Feminino</label>
+                    
+                    <input type="radio" name="sex" id="sexH">
+                    <label for="sexH">Masculino</label>
+                </div>
+                <div id="submit">
+                    <button type="submit" id="btn-register">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
